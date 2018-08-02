@@ -44,14 +44,9 @@ let dad = new Vue({
                 alert(err)
             })
         },
-        getJoke:function(e){
-          //this.isFetchingAJoke = true
-
-          // if(this.selected1=" ")
-          // {
-          //   alert("Select the categories first !")
-          // }
-         if(this.selected1 == 'Any')
+        getJoke:function(e)
+        {
+           if(this.selected1 == 'Any')
             {
             let viewModel = this
               axios.get('https://api.chucknorris.io/jokes/random', {
@@ -65,6 +60,7 @@ let dad = new Vue({
                    viewModel.randomJoke = response.data.value
                    viewModel.url= response.data.url
                    viewModel.image_url=response.data.icon_url
+                    console.log("Url is",viewModel.url);
                    console.log(viewModel.image_url);
             })
             .catch((err)=>{
@@ -109,6 +105,7 @@ let dad = new Vue({
                                 response.data.result.forEach(items=>{
 
                                   items.value = items.value.replace(viewModel.searchJoke,"<span style=background-color:yellow>"+viewModel.searchJoke+"</span>")
+                                    console.log(items.value);
                                   viewModel.SearchedJoke.push(items.value)
 
                                 })
