@@ -8,7 +8,7 @@
 ## Software Requirements / Development Using Visual Studio Code
 1.) **Clone the project from its GitHub repository.**
 
-2.) **In your File System, select File ...->give the relative path where you clone the REPO --> users/fake_path/Chuck-Norris-Facts.**
+2.) **In your File System, select Chuck_norris.html File from the relative path where you clone the REPO --> users/fake_path/Chuck-Norris-Facts/Chuck_norris.html**
 
 3.) **Run the Chuck_norris.html file to see the desired output.**
 
