@@ -1,5 +1,5 @@
 # Chuck Norris Facts
-# (using Vue.JS)
+# (Vue.JS)
 
 ![Project Logo](https://github.com/loveshah751/Chuck-Norris-Facts/blob/master/img/chuck_readme.png)
 
